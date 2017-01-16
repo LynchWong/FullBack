@@ -11,6 +11,8 @@ import UIKit
 /// 内容 Controller 的 UINavigationController，是 WarpperController 的 Child。
 
 class BaseNavigationController: UINavigationController {
+
+    // BaseNavigationController 的 navigationController 就是 GlobalNavigationController
     
     override func popViewController(animated: Bool) -> UIViewController? {
         return navigationController?.popViewController(animated: animated)
